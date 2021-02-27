@@ -1,2 +1,2 @@
 # Curso de Javascript
- Programas em JS
+ Programas em **JS**

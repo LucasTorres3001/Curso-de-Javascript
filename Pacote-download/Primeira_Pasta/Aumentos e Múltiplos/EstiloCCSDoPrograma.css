@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header h1{
+    font-size: 50px;
+    background: linear-gradient(to right,#000,#222,#333,#444,#555,#666,#777,#888);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+section{
+    width: 590px;
+    padding: 1px 20px;
+}
+section form{
+    box-sizing: border-box;
+    padding: 1px 15px;
+    color: #444;
+}
+section form fieldset{
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+}
+section form fieldset:hover{
+    background: linear-gradient(to right,#fff,#eee);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.562);
+}
+section form fieldset input{
+    margin: 6px 1px;
+    border-radius: 6px;
+}
+section form fieldset input#botao{
+    cursor: pointer;
+}
+section form fieldset div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+section form fieldset div p{
+    text-align: justify;
+    text-indent: 64px;
+    text-shadow: 1px 1px 4px #aaa;
+}
+section form fieldset div p span{
+    font-weight: bold;
+}
+footer p{
+    color: #444;
+    font-style: italic;
+}

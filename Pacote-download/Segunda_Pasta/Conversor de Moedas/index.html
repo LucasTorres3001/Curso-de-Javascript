@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moedas</title>
+        <link rel="stylesheet" href="FolhaDeEstilosEmCSS.css">
+        <script src="JS.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Convertendo Moedas</h1>
+        </header>
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>Programa</legend>
+                    <fieldset>
+                        <legend>Moeda estrangeira</legend>
+                        <fieldset>
+                            <legend>Real</legend>
+                            <label for="ValorEmReais">Digite um valor em reais:</label>
+                            <input type="number" name="txtn1" id="ValorEmReais" placeholder="Real">
+                        </fieldset>
+                        <p>Moedas:
+                            <input type="radio" name="MoedasEstrangeiras" id="txtn2" checked>
+                            <label for="txtn2">Dólar americano</label>
+                            <input type="radio" name="MoedasEstrangeiras" id="txtn3">
+                            <label for="txtn3">Euro</label>
+                            <input type="radio" name="MoedasEstrangeiras" id="txtn4">
+                            <label for="txtn4">Libra esterlina</label>
+                        </p>
+                    </fieldset>
+                    <input id="botao" type="button" value="Converter" onclick="moedas()">
+                    <div>
+                        <p></p>
+                        <img src="" alt="Aqui vai uma imagem" title="imagem">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; by LucasTorres</p>
+        </footer>
+    </body>
+</html>

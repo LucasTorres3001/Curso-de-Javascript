@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test</title>
+        <style>
+            h1{
+                font-size: 49px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                background: linear-gradient(to right,#000,#111,#222,#333,#444,#555,#666,#777);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+            form{
+                display: flex;
+                width: 44%;
+                height: 286px;
+                padding: 8px;
+                justify-content: center;
+                margin: auto;
+            }
+            form fieldset{
+                border-radius: 8px;
+                box-sizing: border-box;
+                color: #444;
+                font-family: Consolas;
+            }
+            form fieldset#again{
+                width: 90%;
+            }
+            form fieldset#again:hover{
+                box-shadow: 1px 1px 4px #aaa;
+                background: linear-gradient(to right,#fff,#eee);
+            }
+            form fieldset#again input{
+                margin: 5px 0px;
+            }
+            form fieldset legend{
+                font-weight: bold;
+                text-shadow: 1px 1px 4px #aaa;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Movimento Retilineo Uniformemente Váriado (M.R.U.V.)</h1>
+        <form action="" method="POST">
+            <fieldset id="again">
+                <legend>Movimento Retilineo Uniformemente Váriado</legend>
+                <fieldset id="box1">
+                    <legend>M.R.U.V.</legend>
+                    <label for="txtnum1">Velocidade inicial:</label> <input type="number" name="txtnum1" id="txtnum1" placeholder="m/s"><br>
+                    <label for="txtnum2">Aceleração do veículo:</label> <input type="number" name="txtnum2" id="txtnum2" placeholder="m/s²"><br>
+                    <label for="txtnum3">Espaço percorrido pelo veículo:</label> <input type="number" name="txtnum3" id="txtnum3" placeholder="m">
+                </fieldset>
+                <input type="button" value="Calcular" onclick="mruv()">
+                <p>Resultado</p>
+            </fieldset>
+        </form>
+
+        <script>
+
+            function mruv(){
+
+                var n1 = document.getElementById('txtnum1')
+                var n2 = document.querySelector('input#txtnum2')
+                var n3 = document.getElementById('txtnum3')
+                var VelocidadeFinal = document.getElementsByTagName('p')[0]
+
+                var Vo = Number(n1.value)
+                var a = Number(n2.value)
+                var S = Number(n3.value)
+                var V = Math.sqrt((Vo*Vo)+(a*2*S))
+
+                VelocidadeFinal.innerHTML = `A velocidade final do veículo foi de <strong>${V} m/s</strong> ...</br>`
+
+                if(V >= 0 && V < 11.111){
+                    VelocidadeFinal.innerHTML += `O motorista desse veículo será MULTADO por tráfegar abaixo do limite permitido!`
+                }
+                else if(V >= 11.111 && V < 22.222){
+                    VelocidadeFinal.innerHTML += `O motorista desse veículo está trafegando a uma velocidade dentro do limite permitido.</br>
+                    Portanto, ele não será MULTADO.`
+                }
+                else{
+                    VelocidadeFinal.innerHTML += `O motorista desse veículo será MULTADO por trágefar acima do limite permitido!`
+                }
+            }
+        </script>
+    </body>
+</html>

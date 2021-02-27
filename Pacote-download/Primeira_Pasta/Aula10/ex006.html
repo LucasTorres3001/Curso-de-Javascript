@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos DOM</title>
+        <style>
+            div{
+                background: linear-gradient(to left,#fff,#eee,#ddd,#ccc,#bbb);
+                border: 1px solid #999;
+                box-sizing: border-box;
+                display: flex;
+                border-radius: 10px;
+                height: 200px;
+                width: 20%;
+                align-items: center;
+                justify-content: center;
+                font: 20px 'Consolas';
+                color: #222;
+            }
+            div:hover{
+                box-shadow: 1px 1px 4px #cbcbcb;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="area">
+            Interaja ...
+        </div>
+
+        <script>
+
+            var b = document.getElementById('area')
+            b.addEventListener('click', click)
+            b.addEventListener('mouseenter', entrou)
+            b.addEventListener('mouseout',saiu)
+
+            function click(){
+                b.innerHTML='Clicou!';
+                b.style.background = 'linear-gradient(to right,#fff,#eee,#ddd,#ccc,#bbb)';
+            }
+            function entrou(){
+                b.innerHTML='Entrou!';
+                b.style.background = 'linear-gradient(to top,#fff,#eee,#ddd,#ccc,#bbb)';
+            }
+            function saiu(){
+                b.innerHTML='Saiu!';
+                b.style.background = 'linear-gradient(to bottom,#fff,#eee,#ddd,#ccc,#bbb)';
+            }
+
+        </script>
+    </body>
+</html>

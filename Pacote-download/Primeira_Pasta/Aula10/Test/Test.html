@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test</title>
+        <link rel="stylesheet" href="EstiloDoPrograma.css">
+        <script src="CodigoJSdoPrograma.js"></script>
+    </head>
+
+    <body>
+        <h1>Movimento Retilineo Uniformemente Váriado(M.R.U.V)</h1>
+        <form id="formulary" name="formulario" action="" method="post">
+            <fieldset id="f1">
+                <fieldset id="f2">
+                    <label for="txtnum1">Velocidade inicial:</label> <input type="number" name="txtnum1" id="VelocidadeInicial" placeholder="m/s"><br>
+                    <label for="txtnum2">Aceleração:</label> <input type="number" name="txtnum2" id="Aceleracao" placeholder="m/s²"><br>
+                    <label for="txtnum3">Tempo:</label> <input type="number" name="txtnum3" id="TempoDeDuracao" placeholder="segundos"><br>
+                </fieldset>
+                <input id="botao" type="button" value="Resultado" onclick="mruv()">
+                <div>
+                    <p id="VelocidadeFinal">Velocidade final</p>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

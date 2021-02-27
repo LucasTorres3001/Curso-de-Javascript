@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test 2</title>
+        <style>
+            div#interaction{
+                width: 10%;
+                border: 1px solid #ccc;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                background: linear-gradient(to top,#fff,#eee,#ddd,#ccc,#bbb);
+                margin: auto;
+            }
+            div#interaction:hover{
+                box-shadow: 1px 1px 4px #aaa;
+            }
+            div p{
+                font: 13px Consolas;
+                color: #444;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="interaction">
+            <p>Interaja aqui! ...</p>
+        </div>
+
+
+
+
+        <script>
+
+            var Funcao = document.getElementById('interaction')
+            Funcao.addEventListener('click',clicou)
+            Funcao.addEventListener('mouseenter',entrou)
+            Funcao.addEventListener('mouseout',saiu)
+
+            function clicou(){
+                Funcao.innerHTML = 'Você clicou aqui!'
+                Funcao.style.background = 'linear-gradient(to left,#fff,#eee,#ddd,#ccc,#bbb)'
+                Funcao.style.font = '13px Consolas'
+                Funcao.style.color = '#444'
+            }
+            function entrou(){
+                Funcao.innerHTML = 'Você entrou aqui!'
+                Funcao.style.background = 'linear-gradient(to right,#fff,#eee,#ddd,#ccc,#bbb)'
+                Funcao.style.cursor = 'Pointer'
+                Funcao.style.font = '13px Consolas'
+                Funcao.style.color = '#444'
+            }
+            function saiu(){
+                Funcao.innerHTML = 'Você saiu!'
+                Funcao.style.background = 'linear-gradient(to bottom,#fff,#eee,#ddd,#ccc,#bbb)'
+                Funcao.style.font = '13px Consolas'
+                Funcao.style.color = '#444'
+            }
+
+        </script>
+    </body>
+</html>

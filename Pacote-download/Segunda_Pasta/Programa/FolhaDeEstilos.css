@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header h1{
+    font-size: 55px;
+    background: linear-gradient(to right,#000,#111,#222,#333,#444,#555,#666,#777,#888);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+section{
+    padding: 1px 20px;
+}
+section form{
+    box-sizing: border-box;
+    padding: 1px 15px;
+}
+section form fieldset{
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #444;
+}
+section form fieldset:hover{
+    background: linear-gradient(to right,#fff,#eee);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.603);
+}
+section form fieldset legend{
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #999;
+}
+section form fieldset input#botao{
+    margin: 6px 1px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+section form fieldset input#botao:hover{
+    background: linear-gradient(to right,#000,#111,#222,#333,#444);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.568);
+    font-weight: bold;
+    color: #ababab;
+}
+section form fieldset div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section form fieldset div p{
+    text-shadow: 1px 1px 4px #999;
+}
+section form fieldset div p span{
+    font-weight: bold;
+}
+section form fieldset div img{
+    border-radius: 50%;
+}
+section form fieldset div img:hover{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.603);
+}
+footer p{
+    color: #444;
+    font-style: italic;
+}

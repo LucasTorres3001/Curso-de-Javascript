@@ -1,0 +1,37 @@
+h1{
+    font-size: 68px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(to left,#000,#111,#222,#333,#444);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+form#formulary{
+    width: 38%;
+    color: #444;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+form fieldset#f1{
+    border-radius: 9px;
+}
+form fieldset#f1:hover{
+    background: linear-gradient(to right,#fff,#eee);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.521);
+}
+form fieldset#f1 div{
+    text-align: justify;
+}
+form fieldset#f1 div p{
+    line-height: 25px;
+    text-shadow: 1px 1px 4px #aaa;
+}
+form fieldset#f1 fieldset#f2{
+    border-radius: 9px;
+}
+form fieldset input{
+    margin: 5px 1px;
+    border-radius: 6px;
+}
+form fieldset input#botao{
+    cursor: pointer;
+}

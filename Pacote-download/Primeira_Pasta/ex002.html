@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula</title>
+        <style>
+            p{
+                font: normal 20px Arial;
+            }
+        </style>
+    </head>
+    <body>
+
+        <script>
+            var nome = prompt('Digite seu nome: ','Nome');
+            document.write(`<p>Olá, <strong>${nome}</strong>! O seu nome tem ${nome.length} letras!</p>`);
+            document.write(`<p>O seu nome em letras maiúsculas é ${nome.toUpperCase()}</p>`);
+            document.write(`<p>O seu nome em letras minúsculas é ${nome.toLowerCase()}</p>`);
+
+            //var numero = 1525.6;
+            //document.write(numero.toLocaleString('pt-BR',{style: 'currency',currency: 'USD'}))
+        </script>
+    </body>
+</html>

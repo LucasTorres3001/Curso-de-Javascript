@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header h1{
+    font-size: 50px;
+    background: linear-gradient(to right,#000,#111,#222,#333,#444,#555,#666,#777,#888);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+section{
+    width: 800px;
+    padding: 1px 20px;
+    color: #444;
+}
+section form{
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 1px 15px;
+}
+section form fieldset{
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 14px;
+}
+section form fieldset:hover{
+    background: linear-gradient(to right,#fff,#eee,#ddd);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.555);
+}
+section form fieldset legend{
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.555);
+}
+section form fieldset input{
+    margin: 6px 1px;
+    border-radius: 6px;
+}
+section form fieldset input#botao{
+    cursor: pointer;
+}
+section form fieldset div{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section form fieldset div p{
+    text-align: justify;
+    line-height: 25px;
+    text-shadow: 1px 1px 4px #aaa;
+}
+section form fieldset div p span{
+    font-weight: bold;
+}
+section form fieldset div img{
+    width: 196px;
+    height: 196px;
+    border-radius: 50%;
+}
+section form fieldset div img:hover{
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.555);
+}
+footer p{
+    font-size: 15px;
+    color: #444;
+    font-style: italic;
+}

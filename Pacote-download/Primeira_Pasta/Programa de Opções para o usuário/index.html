@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program</title>
+        <link rel="stylesheet" href="EstilosEmCSS.css">
+        <script src="JS.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Título</h1>
+        </header>
+        <section>
+            <form action="">
+                <fieldset>
+                    <fieldset>
+                        <fieldset>
+                            <label for="NumeroDigitadoPeloUsuario">Digite o primeiro número de forma aleatória:</label>
+                            <input type="number" name="txtn" id="NumeroDigitadoPeloUsuario" placeholder="número">
+                            <br>
+                            <label for="OutroNumeroDigitado">Digite o segundo número também de forma aleatória:</label>
+                            <input type="number" name="txtn1" id="OutroNumeroDigitado" placeholder="número">
+                        </fieldset>
+                        <p>Opção:
+                            <input type="radio" name="OpcoesDoUsuario" id="txtNum" checked>
+                            <label for="txtNum">Adição</label>
+                            <input type="radio" name="OpcoesDoUsuario" id="txtNum1">
+                            <label for="txtNum1">Divisão</label>
+                            <input type="radio" name="OpcoesDoUsuario" id="txtNum2">
+                            <label for="txtNum2">Maior e menor número</label>
+                            <input type="radio" name="OpcoesDoUsuario" id="txtNum3">
+                            <label for="txtNum3">Multiplicação</label>
+                            <input type="radio" name="OpcoesDoUsuario" id="txtNum4">
+                            <label for="txtNum4">Subtração</label>
+                        </p>
+                    </fieldset>
+                    <input id="botao" type="button" value="Clique aqui" onclick="alternative()">
+                    <div>
+                        <p></p>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; by LucasTorres</p>
+        </footer>
+    </body>
+</html>

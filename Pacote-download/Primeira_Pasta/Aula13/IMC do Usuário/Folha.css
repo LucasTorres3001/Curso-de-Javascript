@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header h1{
+    font-size: 49px;
+    background: linear-gradient(to right,#000,#111,#222,#333,#444,#555,#666,#777);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+section{
+    width: 99%;
+    height: 384px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: #444;
+}
+section form{
+    width: 38%;
+    padding: 5px;
+}
+section form fieldset{
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+section form fieldset input{
+    margin: 6px 0px;
+}
+section form fieldset:hover{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right,#fff,#eee);
+}
+section form div{
+    text-align: center;
+}
+section form fieldset div p{
+    padding: 2px 1px;
+    margin: 2px 1px;
+}
+section form fieldset div img#Peso{
+    border-radius: 6px;
+    width: 60px;
+    height: 220px;
+    margin: 2px 1px;
+}
+footer p{
+    color: #444;
+    font-style: italic;
+}
